@@ -1,5 +1,7 @@
 FROM debian:stretch
 
+USER root
+
 ENV PATH="$PATH":"/workspace/flutter/bin"
 
 RUN apt-get update \
@@ -11,12 +13,9 @@ RUN apt-get autoremove -y \
     && apt-get clean -y \
     && rm -rf /var/lib/apt/lists/*
 
-USER gitpod
 
 RUN mkdir /workspace
 WORKDIR /workspace
 
 RUN git clone --branch master https://github.com/flutter/flutter \
     && flutter doctor
-
-USER root
