@@ -12,7 +12,6 @@ RUN apt-get autoremove -y \
 RUN mkdir /home/gitpod
 WORKDIR /home/gitpod
 
-RUN git clone --branch custom-dwds https://github.com/DanTup/flutter \
-	&& flutter config --enable-web
+RUN git clone --branch custom-dwds https://github.com/DanTup/flutter
 
 ENV PUB_CACHE=/workspace/.pub_cache
