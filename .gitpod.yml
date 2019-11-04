@@ -1,4 +1,5 @@
-image: cirrusci/flutter
+image:
+  file: .gitpod.Dockerfile
 tasks:
   - init: flutter packages get
 vscode:
