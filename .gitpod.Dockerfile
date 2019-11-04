@@ -12,7 +12,7 @@ RUN apt-get autoremove -y \
 RUN mkdir /home/gitpod
 WORKDIR /home/gitpod
 
-RUN git clone --branch master https://github.com/flutter/flutter
+RUN git clone --branch master https://github.com/flutter/flutter \
 	&& flutter config --enable-web
 
 ENV PUB_CACHE=/workspace/.pub_cache
