@@ -1,0 +1,7 @@
+image: cirrusci/flutter
+tasks:
+  - init: flutter packages get
+vscode:
+  extensions:
+    - Dart-Code.dart-code@3.6.0:OIKJQXmfWHoIMVCiWrcLsQ==
+    - Dart-Code.flutter@3.6.0:bAElIiRvpBSK2AT2+PDj0w==
