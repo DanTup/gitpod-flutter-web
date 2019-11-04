@@ -3,8 +3,8 @@ FROM debian:stretch
 ENV PATH="$PATH":"/workspace/flutter/bin"
 
 RUN apt-get update \
-    && apt-get -y install git
-# procps wget curl unzip lib32stdc++6 openjdk-8-jdk
+    && apt-get -y install git curl
+# procps wget unzip lib32stdc++6 openjdk-8-jdk
 
 # Clean up
 RUN apt-get autoremove -y \
