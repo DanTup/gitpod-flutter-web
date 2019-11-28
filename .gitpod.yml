@@ -1,7 +1,7 @@
 image:
   file: .gitpod.Dockerfile
 tasks:
-  - init: flutter config --enable-web && flutter packages get
+  - init: ~/flutter/bin/flutter config --enable-web && ~/flutter/bin/flutter packages get
 ports:
   - port: 8080
 vscode:
