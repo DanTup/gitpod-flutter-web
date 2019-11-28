@@ -12,7 +12,7 @@ RUN mkdir /home/gitpod
 WORKDIR /home/gitpod
 
 RUN git clone --branch custom-dwds https://github.com/DanTup/flutter && \
-    ~/flutter/bin/flutter config --enable-web && \
-    ~/flutter/bin/flutter packages get
+    /home/gitpod/flutter/bin/flutter config --enable-web && \
+    /home/gitpod/flutter/bin/flutter packages get
 
 ENV PUB_CACHE=/workspace/.pub_cache
