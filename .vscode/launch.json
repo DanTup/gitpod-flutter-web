@@ -5,7 +5,14 @@
 			"name": "Flutter",
 			"request": "launch",
 			"type": "dart",
-			"program": "lib/main.dart"
+			"program": "lib/main.dart",
+			// TODO: Figure out why we can't do random ports for some services.
+			// "served on localhost only, thus cannot be exposed". Doesn't
+			// the proxy take care of this?
+			"args": [
+				"--web-port",
+				"8080"
+			]
 		}
 	]
 }
