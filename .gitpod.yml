@@ -6,5 +6,5 @@ ports:
   - port: 8080
 vscode:
   extensions:
-    - Dart-Code.dart-code@3.7.0-dev:7wPBKnZrBOqX1WNI8NDtFA==
+    - Dart-Code.dart-code@3.7.0-test.gitpod-debug:e2joCoZdkG/bKPaZwBPEXA==
     - Dart-Code.flutter@3.6.0:bAElIiRvpBSK2AT2+PDj0w==
