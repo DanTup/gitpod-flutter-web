@@ -1,6 +1,6 @@
 {
 	"dart.flutterSdkPath": "/home/gitpod/flutter",
-	"dart.flutterRunLogFile": "/workspace/logs/flutter_run.txt",
-	"dart.observatoryLogFile": "/workspace/logs/observatory.txt",
-	"dart.extensionLogFile": "/workspace/logs/extension.txt",
+	"dart.flutterRunLogFile": "/workspace/gitpod-flutter-web/logs/flutter_run.txt",
+	"dart.observatoryLogFile": "/workspace/gitpod-flutter-web/logs/observatory.txt",
+	"dart.extensionLogFile": "/workspace/gitpod-flutter-web/logs/extension.txt",
 }
