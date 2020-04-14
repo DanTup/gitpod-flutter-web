@@ -12,6 +12,6 @@ WORKDIR /home/gitpod
 ENV PUB_CACHE=/home/gitpod/.pub_cache
 ENV PATH="/home/gitpod/flutter/bin:$PATH"
 
-RUN git clone https://github.com/DanTup/flutter       --branch gitpod-testing && \
+RUN git clone https://github.com/DanTup/flutter        --branch gitpod-testing && \
     /home/gitpod/flutter/bin/flutter config --enable-web && \
     /home/gitpod/flutter/bin/flutter --version
