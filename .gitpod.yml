@@ -3,4 +3,5 @@ image:
 vscode:
   extensions:
     - Dart-Code.flutter@3.6.0:bAElIiRvpBSK2AT2+PDj0w==
-    - Dart-Code.dart-code@3.10.0-dev.gitpod.3:k74MiLhMxtRzFiAyyEiD4A==
+    - Dart-Code.dart-code@3.10.0-dev.gitpod.4:g9b0Pj6tKNCC5uH0jGZiFw==
+#    - Dart-Code.dart-code@3.10.0-dev.gitpod.3:k74MiLhMxtRzFiAyyEiD4A==
