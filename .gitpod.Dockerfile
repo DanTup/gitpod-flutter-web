@@ -14,4 +14,4 @@ ENV PATH="/home/gitpod/flutter/bin:$PATH"
 
 RUN git clone https://github.com/DanTup/flutter       --branch gitpod-testing && \
     /home/gitpod/flutter/bin/flutter config --enable-web && \
-    /home/gitpod/flutter/bin/flutter doctor
+    /home/gitpod/flutter/bin/flutter --version
