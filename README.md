@@ -1,5 +1,7 @@
 A sample Flutter web project for using on GitPod.
 
+In order to use debugging, you'll need to use Chrome with the [Dart Debug extension](https://chrome.google.com/webstore/detail/dart-debug-extension/eljbmlghnomdjgdjmbdekegdkbabckhm?hl=en) installed.
+
 - Open this project in GitPod
 - Click "Get Packages" on any prompt for missing packages and wait for analysis to complete and any build errors from missing packages to disappear
 - Put a breakpont in `lib/main.dart` on the line `_counter++;`
