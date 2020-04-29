@@ -2,5 +2,5 @@ image:
   file: .gitpod.Dockerfile
 vscode:
   extensions:
-    - Dart-Code.dart-code@3.10.0-beta.4.dap-logging:Rbijd5bmfAB4jC/g00NF4w==
+    - Dart-Code.dart-code@3.10.0-beta.5.dap-logging:zOIGMiCWXF+poj5f2lh8dQ==
     - Dart-Code.flutter@3.6.0:bAElIiRvpBSK2AT2+PDj0w==
