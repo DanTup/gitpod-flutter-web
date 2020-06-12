@@ -1,21 +1,20 @@
-FROM debian:stretch
+FROM gitpod/workspace-full-vnc
 
-RUN apt-get update && apt-get -y install \
-    git \
-    curl \
-    unzip \
-    && apt-get autoremove -y \
-    && apt-get clean -y \
-    && rm -rf /var/lib/apt/lists/*
+ENV FLUTTER_HOME=/home/gitpod/flutter \
+    PATH=/usr/lib/dart/bin:$FLUTTER_HOME/bin:$PATH
 
-RUN mkdir -p /home/gitpod
-WORKDIR /home/gitpod
+USER root
 
-ENV PUB_CACHE=/home/gitpod/.pub_cache
+RUN curl https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add - && \
+    curl https://storage.googleapis.com/download.dartlang.org/linux/debian/dart_stable.list > /etc/apt/sources.list.d/dart_stable.list && \
+    apt-get update && \
+    apt-get -y install build-essential libkrb5-dev gcc make dart && \
+    apt-get clean && \
+    apt-get -y autoremove && \
+    apt-get -y clean && \
+    rm -rf /var/lib/apt/lists/*
 
-RUN git clone https://github.com/flutter/flutter -b stable --depth 1 && \
-    cd flutter && \
-    /home/gitpod/flutter/bin/flutter config --enable-web && \
-    /home/gitpod/flutter/bin/flutter --version
+USER gitpod
 
-ENV PATH="/home/gitpod/flutter/bin:$PATH"
+RUN cd /home/gitpod && wget -O flutter_sdk.tar.xz https://storage.googleapis.com/flutter_infra/releases/stable/linux/flutter_linux_v1.0.0-stable.tar.xz \
+    && tar -xvf flutter_sdk.tar.xz && rm flutter_sdk.tar.xz;
