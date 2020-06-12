@@ -4,3 +4,4 @@
 build/
 doc/api/
 pubspec.lock
+logs/
